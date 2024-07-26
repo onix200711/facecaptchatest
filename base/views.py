@@ -61,6 +61,7 @@ def profile(request):
             elif plan == 'advanced':
                 trans = 20000
             user.transactions_left = trans
+            user.plan = plan
             user.save()
     results = ''
     dates = ''
